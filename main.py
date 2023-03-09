@@ -5,7 +5,9 @@
 
 
 
+def encode():
 
+    pass
 
 
 
