@@ -1,6 +1,7 @@
 
 
 
+
 # Cecelia Beringer
 def encode(password):
 
@@ -20,7 +21,12 @@ def encode(password):
     return new_string
 
 
-
+def decode(password):
+    final = ''
+    for char in password:
+        decoded_char = int(char) - 3
+        final += str(decoded_char)
+    return final
 
 
 
@@ -48,7 +54,7 @@ while program == True:
 
 
     if select == 2:
-        print('The encoded password is', encoded_password,', and the original password is', decode(encoded_password) )
+        print('The encoded password is', encoded_password,', and the original password is', decode(encoded_password))
 
 
     if select == 3:
