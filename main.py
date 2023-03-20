@@ -9,13 +9,35 @@ def encode(password):
 
 
     for i in password:
+
         new_value = int(i)
 
-        x = new_value + 3
 
-        y = str(x)
+        if new_value > 6:
 
-        new_string += y
+            new_value = int(i)
+
+            x = (new_value +3) - 10
+
+
+
+            y = str(x)
+
+            new_string += y
+
+        else:
+
+
+
+            x = new_value + 3
+
+            y = str(x)
+
+            new_string += y
+
+
+
+
 
 
     return new_string
